@@ -1,10 +1,6 @@
 # osixia/keepalived
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/osixia/keepalived.svg)][hub]
-[![Docker Stars](https://img.shields.io/docker/stars/osixia/keepalived.svg)][hub]
-[![](https://images.microbadger.com/badges/image/osixia/keepalived.svg)](http://microbadger.com/images/osixia/keepalived "Get your own image badge on microbadger.com")
-
-[hub]: https://hub.docker.com/r/osixia/keepalived/
+[hub]: https://hub.docker.com/r/osixia/keepalived/ (legacy, webash hasn't published anywhere: building locally)
 
 Latest release: 2.0.20 - Keepalived 2.0.20 - [Changelog](CHANGELOG.md) | [Docker Hub](https://hub.docker.com/r/osixia/keepalived/) 
 
@@ -34,7 +30,9 @@ Latest release: 2.0.20 - Keepalived 2.0.20 - [Changelog](CHANGELOG.md) | [Docker
 
 This image require the kernel module ip_vs loaded on the host (`modprobe ip_vs`) and need to be run with : --cap-add=NET_ADMIN --net=host
 
-    docker run --cap-add=NET_ADMIN --cap-add=NET_BROADCAST --cap-add=NET_RAW --net=host -d osixia/keepalived:2.0.20
+    make build
+
+    docker run --cap-add=NET_ADMIN --cap-add=NET_BROADCAST --cap-add=NET_RAW --net=host -d webash/keepalived:2.0.20
 
 ## Beginner Guide
 

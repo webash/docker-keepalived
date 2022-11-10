@@ -1,6 +1,7 @@
 # Use osixia/light-baseimage
-# sources: https://github.com/osixia/docker-light-baseimage
-FROM osixia/light-baseimage:alpine-0.1.6-dev
+# original source: https://github.com/osixia/docker-light-baseimage
+# updated source targeting newer Alpine: https://github.com/webash/docker-light-baseimage/tree/alpine
+FROM webash/light-baseimage:alpine-3.16_osixia0.1.9
 
 # Keepalived version
 ARG KEEPALIVED_VERSION=2.0.20

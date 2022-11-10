@@ -1,4 +1,4 @@
-NAME = osixia/keepalived
+NAME = webash/keepalived
 VERSION = 2.0.20
 
 .PHONY: build build-nocache test tag-latest push push-latest release git-tag-version
